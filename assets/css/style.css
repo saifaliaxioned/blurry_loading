@@ -107,7 +107,7 @@ li {
 /*=================================
   main styling starts here
 =================================*/
-.blur-image {
+.blurDiv .wrapper {
   position: relative;
 }
 
