@@ -83,7 +83,8 @@ sub { bottom: -.25em; }
 
 /*for all*/
 body {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: sans-serif;
 }
 
@@ -100,55 +101,163 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
-  margin: 0 auto;
+  width: 100%; 
 }
-/*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
 
 /*=================================
   main styling starts here
 =================================*/
+.blur-image {
+  position: relative;
+}
 
+.blur-image img {
+  height: 100vh;
+  -webkit-animation: blur 2.5s;
+          animation: blur 2.5s;
+}
 
+@-webkit-keyframes blur {
+0% {
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
+}
+10% {
+  -webkit-filter: blur(90px);
+          filter: blur(90px);
+}
+20% {
+  -webkit-filter: blur(80px);
+          filter: blur(80px);
+}
+30% {
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
+}
+40% {
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
+}
+50% {
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+}
+60% {
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
+}
+70% {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+80% {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+90% {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+100% {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+}
+}
 
+@keyframes blur {
+0% {
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
+}
+10% {
+  -webkit-filter: blur(90px);
+          filter: blur(90px);
+}
+20% {
+  -webkit-filter: blur(80px);
+          filter: blur(80px);
+}
+30% {
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
+}
+40% {
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
+}
+50% {
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+}
+60% {
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
+}
+70% {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+80% {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+90% {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+100% {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+}
+}
 
+.counter { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-animation: fadeout 2.1s;
+          animation: fadeout 2.1s;
+}
 
+.fade-out-active { display: none; }
 
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .7;
+  }
+  75% {
+    opacity: .3;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .7;
+  }
+  75% {
+    opacity: .3;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
